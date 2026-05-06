@@ -78,6 +78,7 @@ def cargar():
 
 def mostrar_menu():
     print("\n--- MENÚ ---")
+    print("\n--- OPCIONES ---")
     print("1. Registrar estudiante")
     print("2. Agregar nota")
     print("3. Calcular promedio")
