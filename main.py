@@ -13,7 +13,7 @@ def registrar_estudiante():
     }
     
     estudiantes.append(estudiante)
-    print("✅ Estudiante registrado")
+    print(" Estudiante registrado")
 
 
 def agregar_notas():
@@ -23,11 +23,13 @@ def agregar_notas():
         if est["id"] == id_buscar:
             nota = float(input("Nota (0-5): "))
             est["notas"].append(nota)
-            print("✅ Nota agregada")
+            print(" Nota agregada")
             return
     
-    print("❌ Estudiante no encontrado")
+    print(" Estudiante no encontrado")
 
+# Calcula el promedio del estudiante
+# promedio = sum(notas) / len(notas)
 
 def calcular_promedio():
     id_buscar = input("ID del estudiante: ")
@@ -61,7 +63,7 @@ def reporte():
 def guardar():
     with open("datos.json", "w") as archivo:
         json.dump(estudiantes, archivo)
-    print("💾 Datos guardados")
+    print(" Datos guardados")
 
 
 def cargar():
@@ -69,7 +71,7 @@ def cargar():
     try:
         with open("datos.json", "r") as archivo:
             estudiantes = json.load(archivo)
-        print("📂 Datos cargados")
+        print(" Datos cargados")
     except:
         print("No hay datos guardados")
 
