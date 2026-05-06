@@ -35,6 +35,8 @@ def agregar_notas():
     
     print(" Estudiante no encontrado")
 
+# Calcula el promedio del estudiante
+# promedio = sum(notas) / len(notas)
 
 def calcular_promedio():
     id_buscar = input("ID del estudiante: ")
